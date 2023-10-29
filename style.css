@@ -101,8 +101,12 @@ nav p:hover{
     font-size: 20px;
 }
 
-img {
+.left img {
     max-width: 100%;
+    height: auto;
+}
+.right img{
+    max-width: 50%;
     height: auto;
 }
 
@@ -184,4 +188,5 @@ section::after {
     .left p{
         font-size: 10px;
     }
+
 }
