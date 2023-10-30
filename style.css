@@ -40,7 +40,7 @@ header a:visited {
 }
 
 header h1{
-    cursor: default;
+    cursor: pointer;
 }
 
 article{
@@ -77,7 +77,7 @@ nav p{
     border: 1px solid black;
     border-radius: 10px;
     color: darkred;
-    cursor: default;
+    cursor: pointer;
 }
 
 nav p:hover{
@@ -105,6 +105,18 @@ nav p:hover{
     max-width: 100%;
     height: auto;
 }
+
+.right{
+    flex: 3;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    height: 88vh;
+    overflow: auto;
+
+}
+
 .right img{
     max-width: 50%;
     height: auto;
@@ -118,13 +130,6 @@ nav p:hover{
     font-family: 'MedievalSharp',fantasy;
 }
 
-.right iframe{
-
-    border: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
 
 .right p{
     font-size: 20px;
@@ -138,17 +143,6 @@ nav p:hover{
     margin: 0;
     padding: 0;
 }
-.right{
-    flex: 3;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    height: 80vh;
-    overflow: auto;
-
-}
-
 
 footer {
     display: flex;
@@ -161,11 +155,16 @@ footer {
 footer p{
     margin-left: 2em;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .video-container {
     max-width: 600px;
     margin: auto;
+}
+
+.przycisk{
+    cursor: pointer;
 }
 
 section::after {
@@ -176,17 +175,104 @@ section::after {
 
 @media (max-width: 600px) {
     .right p{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .right li{
-        font-size: 10px;
+        font-size: 14px;
     }
     .right h1{
-        font-size: 12px;
+        font-size: 16px;
     }
     .left p{
         font-size: 10px;
     }
 
+    .przycisk{
+        width: 15%;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    #dariusz{
+        min-width: 70%;
+        height: auto;
+        transition: transform .2s;
+        margin: 0 auto;
+    }
+
+    #dariusz:hover {
+        transform: scale(1.5);
+    }
+
+    .zoom{
+        transition: transform .2s;
+    }
+
+    .zoom:hover {
+        transform: scale(1.5);
+    }
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    resize: vertical
+}
+
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    resize: vertical
+}
+
+input[type=submit] {
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: darkred;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type=submit]:hover {
+    background-color: #ffbebe;
+    border: 2px solid dimgray;
+}
+
+.container {
+    border-radius: 2px;
+    background-color: #000000;
+    padding: 10px;
+    color: black;
+}
+.container label{
+    color: white;
+}
+.container p{
+    padding: 20px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background-color: darkgray;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: darkred;
+    cursor: pointer;
+    font-size: 20px;
 }

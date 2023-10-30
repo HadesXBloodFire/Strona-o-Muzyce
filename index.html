@@ -3,7 +3,6 @@
 <head>
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<!--    <script src="https://www.youtube.com/iframe_api"></script>-->
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
     <meta charset="UTF-8">
@@ -21,7 +20,7 @@
     <a id = "dom"><h1>Moja ulubiona muzyka</h1></a>
     </header>
     <nav>
-        <p id="Avantasia"> Avantasia</p>
+        <p id="Avantasia">Tobias Sammet’s Avantasia</p>
         <p id="NK">Nocny Kochanek</p>
         <p id="BOM">Brothers Of Metal</p>
     </nav>
@@ -38,8 +37,8 @@
         <div class="right">
             <h1>Coś o mnie i o Power Metalu</h1>
                 <p>Nazywam się Maciej Wilewski i bardzo lubię muzykę heavy metalową wszelkiego podrodzaju.<br>
-                Moim ulubionym gatunkiem z rodziny metalu jest power metal europejski. wywodzi się z Niemiec około lat 80. <br>Charakteryzuje go czysty i melodyjny wokal (często falset) oraz szybki rytm.<br>
-                Teksty piosenek często nawiązują do fantasy, science-fiction, mitologii i religi.<br> A więc wszystkie moje ulubione we wszelakich mediach motywy.<br>W porównaniu do innych gatunków metalu jest on bardziej spokojny i lekki (ale spokojnie ma też swoje ostre momenty).<br>
+                Moim ulubionym gatunkiem z rodziny metalu jest power metal europejski. Wywodzi się z Niemiec około lat 80. <br>Charakteryzuje go czysty i melodyjny wokal (często falset) oraz szybki rytm.<br>
+                Teksty piosenek często nawiązują do fantasy, science-fiction, mitologii i religii.<br> A więc do wszystkich moich ulubionych we wszelakich mediach motywów.<br>W porównaniu do innych gatunków metalu jest on bardziej spokojny i lekki (ale spokojnie ma też swoje ostre momenty).<br>
                 Najbardziej znanymi zespołami grającymi power metal są:</p>
                 <ul>
                     <li>Helloween</li>
@@ -50,14 +49,15 @@
                     <li>Sabaton</li>
                 </ul>
                 <p>Zapraszam do odsłuchania składanki kilku dobrych utworów powermetalowych, obrazujących czym jest ten gatunek:<br>
-                    <img id ="play1" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
+                    <img class="przycisk" id ="play1" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
             <div class="video-container">
                 <video class = "yt" id="power" width="100%" controls>
                     <source src="10%20EPIC%20Power%20Metal%20Songs%20in%206%20MINUTES.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-                <p>Lubię też ballady metalowe, tradycyjny heavy metal i wszystko co nawinie mi się w zrandomizowanej kolejce odtwarzania.</p>
+                <p>Autor: Dan Vasc<br>
+                    Lubię też ballady metalowe, tradycyjny heavy metal i wszystko, co nawinie mi się w zrandomizowanej kolejce odtwarzania.</p>
         </div>
 
     </article>
@@ -85,11 +85,11 @@
                 Wśród najczęściej pojawiających się można wyróżnić Michael'a Kiske z Helloween czy Floor Jansen z grupy Nightwish.<br>
                 Ich teledyski często mają fabułę wpasowującą się w ton utworu i całego albumu, a grafiki okładek zwalają z nóg. Oto kilka z nich:<br><br>
             </p>
-                <img src="Avantasia_-_The_Scarecrow_-_2008._Front.jpg" height ="250" width="250">
-                <img src="AvantasiaPAranormal.jpg" height ="250" width="250">
-                <img src="pol_pl_Avantasia-Moonglow-49211_1.jpg" height ="250" width="250">
+                <img class="zoom" src="Avantasia_-_The_Scarecrow_-_2008._Front.jpg" height ="250" width="250">
+                <img class="zoom" src="AvantasiaPAranormal.jpg" height ="250" width="250">
+                <img class="zoom" src="pol_pl_Avantasia-Moonglow-49211_1.jpg" height ="250" width="250">
             <p><br>Zapraszam do odsłuchania piosenki "The Scarecrow" wykonanej na żywo:<br>
-                <img id ="play2" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
+                <img class="przycisk" id ="play2" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
             <div class="video-container">
                 <video class = "yt" id="scarecrow" width="100%" controls>
                     <source src="Avantasia%20-%20The%20Scarecrow%20(The%20Flying%20Opera)%20live%20HD.mp4" type="video/mp4">
@@ -132,10 +132,10 @@
             <p>
                 Ich utwory przeważnie kręcą się koło jednego z tematów bliskich sercu każdego studenta: alkohol, kebab i kobiety.<br>
                 W ich tekstach nigdy nie brakuje czarnego humoru, satyry i ironii,<br>
-                za co sa kochani przez wielu i nienawidzeni przez Pana Darka z Warszawy<br>
+                za co są kochani przez wielu i nienawidzeni przez Pana Darka z Warszawy<br>
                 który wyraził swoje zażenowanie koncertem podczas Dni Ursynowa w taki oto sposób:<br>
             </p>
-            <img src="dariusz.jpg">
+            <img id="dariusz" src="dariusz.jpg">
             <p> Charakter całego zespołu oprócz ich wspaniałych utworów można bardzo łatwo wyłapać, słuchając tej historii:<br>
                 Na Krakowskich Juwenaliach w Strefie Plaża ostatniego dnia koncert grali Myslovitz, Nocny Kochanek i Lady Pank.<br>
                 Studenci standardowo podchmieleni skandowali "Pokaż dupę" do każdego, kto wszedł na scenę. (Tak nawet do Pana Rektora)<br>
@@ -147,7 +147,7 @@
                 Zdjęcia wam oszczędzę, ale jak bardzo chcecie, to w internecie nic nie ginie ;).<br>
             </p>
             <p><br>Tym optymistycznym akcentem zapraszam do osłuchania pięknej ballady o Koniu na Białym Rycerzu<br>
-                <img id ="play3" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
+                <img class="przycisk" id ="play3" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
             <div class="video-container">
                 <video class = "yt" id="kon" width="100%" controls>
                     <source src="Nocny%20Kochanek%20-%20Koń%20na%20Białym%20Rycerzu%20(Oficjalny%20Teledysk).mp4" type="video/mp4">
@@ -185,10 +185,10 @@
                 <li>Johan Johansson</li>
             </ul>
             <p>Do tej pory ukazały się dwa albumy, które przyjęły się bardzo pozytywnie. Tutaj okładki albumów:</p>
-            <br><img src="prophet.jpg" height="500" width="500">
-            <img src="emblas.jpg" height="500" width="500">
+            <br><img class="zoom" src="prophet.jpg" height="500" width="500">
+            <img class="zoom" src="emblas.jpg" height="500" width="500">
             <br><p>Zapraszam do odsłuchania utworu "Kaunaz Dagaz":<br>
-                <img id ="play4" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
+                <img class="przycisk" id ="play4" src ="Youtube_logo.png" height ="100" width = "100"><br></p>
             <div class="video-container">
                 <video class = "yt" id="kaunaz" width="100%" controls>
                     <source src="BROTHERS%20OF%20METAL%20-%20Kaunaz%20Dagaz%20(2021)%20%20Official%20Music%20Video%20%20AFM%20Records.mp4" type="video/mp4">
@@ -198,8 +198,42 @@
             </div>
         </div>
     </article>
+    <article class="main" id ="kontakt">
+        <div class="container">
+            <form>
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="Your email.." required>
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="poland">Poland</option>
+                    <option value="deutschland">Deutschland</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+            <p> Dane kontaktowe:<br>
+                Telefon: 7777<br>
+                Email: m.m.wilewski@gmail.com<br>
+                Adres: Kraków, Prądnicka 76
+            </p>
+        </div>
+    </article>
     <footer>
-        <p>&copy; Maciej Wilewski 2023</p>
+        <p id="btkontakt">&copy; Maciej Wilewski 2023 - Zapraszam do kontaktu</p>
     </footer>
 </body>
 
